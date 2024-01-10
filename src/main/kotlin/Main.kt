@@ -38,13 +38,15 @@ fun main() {
 
     if (!largeFamily && !singleParentFamily && !hasSocialBonus){
         finalCharge = calculateFinalChargeNoDiscount(fixedFee, variableFee)
+        menuInvoice(finalCharge, waterConsumtion, variableFee, fixedFee) // Sortida de dades final
     }else if (hasSocialBonus){
         socialBonusDiscount = discountSocialBonus(variableFee)
         finalCharge = calculateFinalChargeWithDiscount(fixedFee, variableFee, socialBonusDiscount)
+        menuInvoice(finalCharge, waterConsumtion, variableFee, fixedFee, socialBonusDiscount, "SI") // Sortida de dades final
     }else{
         discountFamilyType = discountFamilyType(variableFee, numberOfMembers)
         finalCharge = calculateFinalChargeWithDiscount(fixedFee, variableFee, discountFamilyType)
+        menuInvoice(finalCharge, waterConsumtion, variableFee, fixedFee, discountFamilyType, "NO") // Sortida de dades final
     }
-    println(finalCharge)
 
 }

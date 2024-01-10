@@ -1,6 +1,9 @@
 import org.example.readBoolean
 import org.example.readFloat
 import org.example.readInt
+import org.example.roundToTwoDecimals
+import java.time.LocalDate
+
 
 /** Funció copiada i actualitzada de David Marín que dona la benvinguda a l'usuari.
  * @author David Marin
@@ -30,8 +33,8 @@ fun menuWelcome(){
  */
 fun menuWaterConsumtion(): Float {
     return readFloat(
-        "Indiqui el seu consum d'aigua, en Litres, del mes que volem calcular, format (XX.XX)",
-        "Recordi que ha de introduir els litres en format (XX/XX)",
+        "Indiqui el seu consum d'aigua, en Litres, del mes que volem calcular.",
+        "Recordi que ha de introduir els litres.",
         "Ha introduit un valor no vàlid",
         0.0f,
         9999.9f
@@ -109,4 +112,33 @@ fun menuSocialBonus(): Boolean {
         "Introduieixi si disposa d'un bo social: (true/false).",
         "Valor incorrecte, recordi que les opcions son (true/false)"
     )
+}
+
+fun menuInvoice (finalCharge:Float, waterConsumtion:Float, variableFee:Float, fixedFee:Int, discount:Float = 0f, socialBonus:String = "NO") {
+    val date:LocalDate = LocalDate.now()
+    val pricePerLiter:Float = roundToTwoDecimals(variableFee / waterConsumtion)
+
+    val invoice = """
+    |###########################################################################
+    |#                         FACTURA DE L'AIGUA                              #
+    |###########################################################################
+    |# Client: ITB                                                             #
+    |# Data: $date                                                             
+    |###########################################################################
+    |# Resum del Consum:                                                       #
+    |#   - Litres consumits: $waterConsumtion                                  
+    |#   - Preu per litre: $pricePerLiter                                      
+    |#   - Cuota variable: $variableFee                                        
+    |#   - Cuota Fixe: $fixedFee                                               
+    |###########################################################################
+    |# Descomptes i Bonificacions:                                             #
+    |#   - Descompte aplicat: $discount                                        
+    |#   - Bo social: $socialBonus                                           
+    |###########################################################################
+    |# TOTAL A PAGAR: $finalCharge                                             
+    |###########################################################################
+    """.trimMargin()
+
+    println(invoice)
+
 }

@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="455871a5-8018-47aa-b23b-06551790b87e" name="Changes" comment="calculationsFunctions.kt: added roundToTwoDecimals function and implement it everywhere.&#10;Fix bugs and improve code.&#10;Main.kt: add calculation of the final charge section">
+    <list default="true" id="455871a5-8018-47aa-b23b-06551790b87e" name="Changes" comment="utilitites.kt: move here the roundToTwoDecimals function and add kdoc.&#10;calculationsFunctions.kt: add kdoc to all functions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/calculationsFunctions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/calculationsFunctions.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utilitites.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utilitites.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/InteractionWithUser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/InteractionWithUser.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704894516623</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="utilitites.kt: move here the roundToTwoDecimals function and add kdoc.&#10;calculationsFunctions.kt: add kdoc to all functions">
+      <option name="closed" value="true" />
+      <created>1704895895434</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1704895895434</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -190,6 +198,7 @@
     <MESSAGE value="calculationsFunctions.kt is born, calculations functions are added" />
     <MESSAGE value="calculationsFunctions.kt little update&#10;Main.kt: add data processing section based on the functions on the calculationsFunctions.kt file" />
     <MESSAGE value="calculationsFunctions.kt: added roundToTwoDecimals function and implement it everywhere.&#10;Fix bugs and improve code.&#10;Main.kt: add calculation of the final charge section" />
-    <option name="LAST_COMMIT_MESSAGE" value="calculationsFunctions.kt: added roundToTwoDecimals function and implement it everywhere.&#10;Fix bugs and improve code.&#10;Main.kt: add calculation of the final charge section" />
+    <MESSAGE value="utilitites.kt: move here the roundToTwoDecimals function and add kdoc.&#10;calculationsFunctions.kt: add kdoc to all functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="utilitites.kt: move here the roundToTwoDecimals function and add kdoc.&#10;calculationsFunctions.kt: add kdoc to all functions" />
   </component>
 </project>
