@@ -1,4 +1,8 @@
 
 fun main() {
-    println("Hello World!")
+    // es dona la benvinguda a l'usuari
+    menuWelcome()
+
+    // es pregunta a l'usuari per el seu consum en Litres
+    menuWaterConsumtion()
 }
