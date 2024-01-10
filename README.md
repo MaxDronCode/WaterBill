@@ -24,7 +24,7 @@ Finally, for this project, the classic test folder has been enabled, with a clas
 
 
 <a id = "install"></a>
-# How to Install and Run the Project
+# ⌨️ How to Install and Run the Project
 Here, I'll show you how you can install and run it on your own machine.
 
 ## 🔧 Prerequisites
