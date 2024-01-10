@@ -38,11 +38,11 @@ fun calculateVariableFee (feePerLiter:Float, waterConsumtion: Float) : Float {
     return roundToTwoDecimals(feePerLiter * waterConsumtion)
 }
 
-/** Function that calculates the discount that can be applied if you belong to a special type of family, bearing in mind that the discount cannot exceed 50%.
+/** Function that calculates the discount that can be applied if you belong to a special type of family, bearing in mind that the discount cannot exceed 50%. The discount percentage is 10 * the number of members of the family.
  * @author Max Dron
  * @since 2024/01/10
  * @param variableFee Variable fee to be paid by the user
- * @param membersNumber Number of family members of the user
+ * @param membersNumber Number of family members of the user (min:2 - max:10)
  * @return Returns the discount to be applied
  */
 fun discountFamilyType (variableFee:Float, membersNumber:Int): Float {
@@ -53,7 +53,7 @@ fun discountFamilyType (variableFee:Float, membersNumber:Int): Float {
     else roundToTwoDecimals(actualDiscount)
 }
 
-/** Function that calculates the social voucher discount based on your variable fee
+/** Function that calculates the social voucher discount based on your variable fee. If it exists, the user has an 80% of discount in the variable fee.
  * @author Max Dron
  * @since 2024/01/10
  * @param variableFee Variable fee to be paid by the user
@@ -76,12 +76,12 @@ fun calculateFinalChargeNoDiscount (fixedFee: Int, variableFee:Float): Float {
     return roundToTwoDecimals(fixedFee + variableFee)
 }
 
-/** Function that calculates the final price to pay if the user does have a discount
+/** Function that calculates the final price to pay applying user's discount
  * @author Max Dron
  * @since 2024/01/10
  * @param fixedFee Fixed fee to be paid by the user
  * @param variableFee Variable fee to be paid by the user
- * @param discount Discount to be applied to the user
+ * @param discount Discount to be applied to the user (SocialBonusDiscount or FamilyTypeDiscount)
  * @return Returns final price to pay
  * @see roundToTwoDecimals
  */
