@@ -18,7 +18,7 @@ LiquidAccount welcomes you as your assistant designed to demystify and explain w
 
 <img src="img/utilities.png" alt="Overview" width="600"/>
 
-The application relies on a file of functions to display various interaction [menus](/src/main/kotlin/interactionWithUser.kt) with the user, a file for all functions related to [calculation](/src/main/kotlin/calculationsFunctions.kt). Additionally, two support files are included—one that provides quick and simple functions for [coloring](/src/main/kotlin/consoleColors.kt) console output, and another support file with [useful functions](/src/main/kotlin/utilities.kt) for keyboard input, data validation, etc.
+The application relies on a file of functions to display various interaction [menus](/src/main/kotlin/InteractionWithUser.kt) with the user, a file for all functions related to [calculation](/src/main/kotlin/calculationsFunctions.kt). Additionally, two support files are included—one that provides quick and simple functions for [coloring](/src/main/kotlin/consoleColors.kt) console output, and another support file with [useful functions](/src/main/kotlin/utilitites.kt) for keyboard input, data validation, etc.
 
 Finally, for this project, the classic test folder has been enabled, with a class full of functions that [test](/src/test/kotlin/CalculationsFunctionsKtTest.kt) most of the program's algorithms several times.
 
