@@ -17,8 +17,8 @@ fun calculateVariableFee (feePerLiter:Float, waterConsumtion: Float) : Float {
 }
 
 fun discountFamilyType (variableFee:Float, membersNumber:Int): Float {
-    val maxDiscount = variableFee * 50 / 100
-    val actualDiscount = 10 * membersNumber.toFloat()
+    val maxDiscount:Float = variableFee * 50 / 100
+    val actualDiscount:Float = 10 * membersNumber.toFloat()
     return if (actualDiscount > maxDiscount) maxDiscount
     else actualDiscount
 }

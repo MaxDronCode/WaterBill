@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="455871a5-8018-47aa-b23b-06551790b87e" name="Changes" comment="InteractionWithUser.kt: update some kdoc and improve menuNumberOfMembers function.">
+    <list default="true" id="455871a5-8018-47aa-b23b-06551790b87e" name="Changes" comment="calculationsFunctions.kt is born, calculations functions are added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/InteractionWithUser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/InteractionWithUser.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
@@ -139,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704879884920</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="calculationsFunctions.kt is born, calculations functions are added">
+      <option name="closed" value="true" />
+      <created>1704883509813</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1704883509813</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -149,6 +157,7 @@
     <MESSAGE value="InteractionWithUser.kt: The menuFamilyType function is included, added to Main.kt, and kDoc is added and corrected in these functions as well as the previously existing ones." />
     <MESSAGE value="Main.kt: Includes several functions and corrects code documentation&#10;InteractionWithUser.kt: update documentation, update some functions, add function menuNumberOfMembers and menuSocialBonus" />
     <MESSAGE value="InteractionWithUser.kt: update some kdoc and improve menuNumberOfMembers function." />
-    <option name="LAST_COMMIT_MESSAGE" value="InteractionWithUser.kt: update some kdoc and improve menuNumberOfMembers function." />
+    <MESSAGE value="calculationsFunctions.kt is born, calculations functions are added" />
+    <option name="LAST_COMMIT_MESSAGE" value="calculationsFunctions.kt is born, calculations functions are added" />
   </component>
 </project>
