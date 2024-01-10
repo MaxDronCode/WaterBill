@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="455871a5-8018-47aa-b23b-06551790b87e" name="Changes" comment="add console colors">
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/CalculationsFunctionsKtTest.kt" afterDir="false" />
+    <list default="true" id="455871a5-8018-47aa-b23b-06551790b87e" name="Changes" comment="calculationsFunctions.kt: minor improvements.&#10;&#10;CalculationsFunctionsKtTest is created, and 2 test per function has been made.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/calculationsFunctions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/calculationsFunctions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/InteractionWithUser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/InteractionWithUser.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +17,16 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -86,7 +95,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CalculationsFunctionsKtTest.chechDiscountSocialBonus">
+  <component name="RunManager" selected="Gradle.CalculationsFunctionsKtTest.checkComputeFinalPriceWithDiscount">
     <configuration name="CalculationsFunctionsKtTest.chechDiscountSocialBonus" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -111,7 +120,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CalculationsFunctionsKtTest.checkCalculateFixedFee" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CalculationsFunctionsKtTest.checkComputeFinalPriceWithDiscount" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -124,7 +133,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;CalculationsFunctionsKtTest.checkCalculateFixedFee&quot;" />
+            <option value="&quot;CalculationsFunctionsKtTest.checkComputeFinalPriceWithDiscount&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -135,7 +144,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CalculationsFunctionsKtTest.checkCalculateVariableFee" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CalculationsFunctionsKtTest.checkComputeFinalPriceWithoutDiscount" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -148,7 +157,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;CalculationsFunctionsKtTest.checkCalculateVariableFee&quot;" />
+            <option value="&quot;CalculationsFunctionsKtTest.checkComputeFinalPriceWithoutDiscount&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -183,20 +192,37 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MainKt" />
-      <module name="WaterBill.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="CalculationsFunctionsKtTest.checkDiscountSocialBonus" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;CalculationsFunctionsKtTest.checkDiscountSocialBonus&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CalculationsFunctionsKtTest.checkComputeFinalPriceWithDiscount" />
+        <item itemvalue="Gradle.CalculationsFunctionsKtTest.checkComputeFinalPriceWithoutDiscount" />
+        <item itemvalue="Gradle.CalculationsFunctionsKtTest.checkDiscountSocialBonus" />
         <item itemvalue="Gradle.CalculationsFunctionsKtTest.chechDiscountSocialBonus" />
         <item itemvalue="Gradle.CalculationsFunctionsKtTest.checkDiscountFamilyType" />
-        <item itemvalue="Gradle.CalculationsFunctionsKtTest.checkCalculateVariableFee" />
-        <item itemvalue="Gradle.CalculationsFunctionsKtTest.checkCalculateFixedFee" />
-        <item itemvalue="Kotlin.MainKt" />
       </list>
     </recent_temporary>
   </component>
@@ -328,7 +354,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704904404506</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="calculationsFunctions.kt: minor improvements.&#10;&#10;CalculationsFunctionsKtTest is created, and 2 test per function has been made.">
+      <option name="closed" value="true" />
+      <created>1704909142453</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1704909142453</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -346,6 +380,7 @@
     <MESSAGE value="utilitites.kt: The function readYesNo is introduced and implemented throughout the program, replacing the readBoolean function, and it is also documented" />
     <MESSAGE value="main.kt: minor improvements, make ir prettier" />
     <MESSAGE value="add console colors" />
-    <option name="LAST_COMMIT_MESSAGE" value="add console colors" />
+    <MESSAGE value="calculationsFunctions.kt: minor improvements.&#10;&#10;CalculationsFunctionsKtTest is created, and 2 test per function has been made." />
+    <option name="LAST_COMMIT_MESSAGE" value="calculationsFunctions.kt: minor improvements.&#10;&#10;CalculationsFunctionsKtTest is created, and 2 test per function has been made." />
   </component>
 </project>

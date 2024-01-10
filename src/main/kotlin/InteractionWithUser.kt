@@ -117,6 +117,18 @@ fun menuSocialBonus(): Boolean {
     )
 }
 
+/** Function that finally shows the user the result of all processes, an invoice with all the detailed data.
+ * @author Max Dron
+ * @since 2024/01/10
+ * @param finalCharge The amount of money the user has to pay at the end, with discounts applied if there were any.
+ * @param waterConsumtion Amount of liters consumed
+ * @param variableFee Variable fee to be paid by the user
+ * @param fixedFee Fixed fee to be paid by the user
+ * @param discount Discount applied to the user, if no parameter is passed, 0 is assigned by default
+ * @param socialBonus Parameter that indicates whether there has been a discount for social bonus, by default, its value is 'NO'
+ * @param familyType Parameter that indicates whether there has been a discount for familyType, by default, its value is 'NO'
+ *
+ */
 fun menuInvoice (finalCharge:Float, waterConsumtion:Float, variableFee:Float, fixedFee:Int, discount:Float = 0f, socialBonus:String = "NO", familyType:String = "NO") {
     val date:LocalDate = LocalDate.now()
     val pricePerLiter:Float = roundToTwoDecimals(variableFee / waterConsumtion)
