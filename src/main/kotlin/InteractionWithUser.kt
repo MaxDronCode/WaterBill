@@ -28,15 +28,14 @@ fun menuWelcome(){
  * @since 2024/01/10
  * @see readFloat
  */
-fun menuWaterConsumtion (): Float {
-    val waterConsumtion = readFloat(
+fun menuWaterConsumtion(): Float {
+    return readFloat(
         "Indiqui el seu consum d'aigua, en Litres, del mes que volem calcular, format (XX.XX)",
         "Recordi que ha de introduir els litres en format (XX/XX)",
         "Ha introduit un valor no vàlid",
         0.0f,
         9999.9f
     )
-    return waterConsumtion
 }
 
 /** Function that determines if the user belongs to a large family.
@@ -45,10 +44,11 @@ fun menuWaterConsumtion (): Float {
  * @return Returns a boolean value indicating whether the user belongs to a large family or not.
  * @see readBoolean
  */
-fun menuLargeFamily() : Boolean {
-    val largeFamily = readBoolean("Son familia nombrosa? (true/false)",
-        "Valor incorrecte, recordi (true/false)")
-    return largeFamily
+fun menuLargeFamily(): Boolean {
+    return readBoolean(
+        "Son familia nombrosa? (true/false)",
+        "Valor incorrecte, recordi (true/false)"
+    )
 }
 
 /** Function that determines if the user belongs to a single parent family.
@@ -57,10 +57,11 @@ fun menuLargeFamily() : Boolean {
  * @return Returns a boolean value indicating whether the user belongs to a single parent family or not.
  * @see readBoolean
  */
-fun menuSingleParentFamily () : Boolean {
-    val singleParentFamily = readBoolean("Son una familia monoparental/monomarental? (true/false)",
-        "Valor incorrecte, recordi (true/false)")
-    return singleParentFamily
+fun menuSingleParentFamily(): Boolean {
+    return readBoolean(
+        "Son una familia monoparental/monomarental? (true/false)",
+        "Valor incorrecte, recordi (true/false)"
+    )
 }
 
 /** Function that determines how many members the user's family consists of.
@@ -79,14 +80,14 @@ fun menuNumberOfMembers (largeFamily:Boolean, singleParentFamily:Boolean): Int {
             10)
         return numberOfMembers
     }else if (singleParentFamily){
-            numberOfMembers = readInt("Vostè ha indicat que pertant a una familia monomarental, indiqui quants membres resideixen a la vostra finca.",
+            numberOfMembers = readInt("Vostè ha indicat que pertany a una familia monomarental, indiqui quants membres resideixen a la vostra finca.",
             "Ha de introduir un nombre enter positiu.",
-            "Valor no acceptat, Valor mínim:2 , Valor màxim:3.",
+            "Valor no acceptat, Valor mínim:2 , Valor màxim:10.",
             2,
-            3)
+            10)
         return numberOfMembers
-    } else if (largeFamily){
-            numberOfMembers = readInt("Vostè ha indicat que pertant a una familia nombrosa, indiqui quants membres resideixen a la vostra finca.",
+    } else {
+            numberOfMembers = readInt("Vostè ha indicat que pertany a una familia nombrosa, indiqui quants membres resideixen a la vostra finca.",
             "Ha de introduir un nombre enter positiu.",
             "Valor no acceptat, Valor mínim:5 , Valor màxim:10.",
             5,
@@ -94,9 +95,7 @@ fun menuNumberOfMembers (largeFamily:Boolean, singleParentFamily:Boolean): Int {
         return  numberOfMembers
     }
 
-    return numberOfMembers
 }
-
 
 
 /** Function that asks the user if they have a social bonus using the readBoolean() function.
@@ -105,8 +104,9 @@ fun menuNumberOfMembers (largeFamily:Boolean, singleParentFamily:Boolean): Int {
  * @return A boolean is returned indicating whether the user enjoys a social bonus or not
  * @see readBoolean
  */
-fun menuSocialBonus (): Boolean {
-    val hasSocialBonus = readBoolean("Introduieixi si disposa d'un bo social: (true/false).",
-        "Valor incorrecte, recordi que les opcions son (true/false)")
-    return hasSocialBonus
+fun menuSocialBonus(): Boolean {
+    return readBoolean(
+        "Introduieixi si disposa d'un bo social: (true/false).",
+        "Valor incorrecte, recordi que les opcions son (true/false)"
+    )
 }

@@ -29,24 +29,22 @@ fun main() {
     // determinem cuota variable
     val variableFee:Float = variableFee(waterConsumtion)
 
-    // determinem descompte 1 si escau
-    var discountFamilyType:Float = 0f
-    if (largeFamily || singleParentFamily){
-        discountFamilyType = discountFamilyType(variableFee, numberOfMembers)
-    }
+    // determinem què calcularem en funció de si l'usuari te descomptes i quins son
+    // es dona prioritat a hasSocialBonus per sobre de discountFamilyType, perque sempre es un descompte superior
 
-    // determinem descompte 2 si escau
+    var finalCharge:Float = 0f
     var socialBonusDiscount:Float = 0f
-    if (hasSocialBonus){
-        socialBonusDiscount = discountSocialBonus(variableFee)
-    }
+    var discountFamilyType:Float = 0f
 
-    // en cas de que l'usuati tingui els 2 descomptes, ens quedem amb el mes alt
-    var has2discounts:Boolean = false
-    var actualDiscount:Float = 0f
-    if (socialBonusDiscount > 0f && discountFamilyType > 0f){
-        has2discounts = true
-        if (socialBonusDiscount >= discountFamilyType) actualDiscount = socialBonusDiscount
-        else actualDiscount = discountFamilyType
+    if (!largeFamily && !singleParentFamily && !hasSocialBonus){
+        finalCharge = calculateFinalChargeNoDiscount(fixedFee, variableFee)
+    }else if (hasSocialBonus){
+        socialBonusDiscount = discountSocialBonus(variableFee)
+        finalCharge = calculateFinalChargeWithDiscount(fixedFee, variableFee, socialBonusDiscount)
+    }else{
+        discountFamilyType = discountFamilyType(variableFee, numberOfMembers)
+        finalCharge = calculateFinalChargeWithDiscount(fixedFee, variableFee, discountFamilyType)
     }
+    println(finalCharge)
+
 }

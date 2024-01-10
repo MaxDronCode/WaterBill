@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="455871a5-8018-47aa-b23b-06551790b87e" name="Changes" comment="calculationsFunctions.kt is born, calculations functions are added">
+    <list default="true" id="455871a5-8018-47aa-b23b-06551790b87e" name="Changes" comment="calculationsFunctions.kt little update&#10;Main.kt: add data processing section based on the functions on the calculationsFunctions.kt file">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/InteractionWithUser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/InteractionWithUser.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/calculationsFunctions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/calculationsFunctions.kt" afterDir="false" />
@@ -72,9 +74,24 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Volumes/DAW/DAW/M3/KOTLIN/WaterBill"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="WaterBill.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.MainKt" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -147,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704883509813</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="calculationsFunctions.kt little update&#10;Main.kt: add data processing section based on the functions on the calculationsFunctions.kt file">
+      <option name="closed" value="true" />
+      <created>1704884815641</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1704884815641</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -158,6 +183,18 @@
     <MESSAGE value="Main.kt: Includes several functions and corrects code documentation&#10;InteractionWithUser.kt: update documentation, update some functions, add function menuNumberOfMembers and menuSocialBonus" />
     <MESSAGE value="InteractionWithUser.kt: update some kdoc and improve menuNumberOfMembers function." />
     <MESSAGE value="calculationsFunctions.kt is born, calculations functions are added" />
-    <option name="LAST_COMMIT_MESSAGE" value="calculationsFunctions.kt is born, calculations functions are added" />
+    <MESSAGE value="calculationsFunctions.kt little update&#10;Main.kt: add data processing section based on the functions on the calculationsFunctions.kt file" />
+    <option name="LAST_COMMIT_MESSAGE" value="calculationsFunctions.kt little update&#10;Main.kt: add data processing section based on the functions on the calculationsFunctions.kt file" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Main.kt</url>
+          <line>3</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
