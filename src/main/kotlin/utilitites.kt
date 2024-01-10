@@ -1,8 +1,19 @@
 package org.example
 
 import java.util.*
+import kotlin.math.round
 
 val scan: Scanner = Scanner(System.`in`)
+
+/** Function that takes a Float as input and returns this value rounded to two decimal places
+ * @author Max Dron
+ * @since 2024/01/10
+ * @param number Number to round
+ * @return Rounded number
+ */
+fun roundToTwoDecimals(number: Float): Float {
+    return round(number * 100) / 100
+}
 
 /**
  * This method can be used to read a String word value from the user through keyboard using java.util.Scanner
