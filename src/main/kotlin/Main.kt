@@ -5,4 +5,7 @@ fun main() {
 
     // es pregunta a l'usuari per el seu consum en Litres
     menuWaterConsumtion()
+
+    // esbrinem quin tipus de familia té l'usuari i quants membres té
+    menuFamilyType()
 }

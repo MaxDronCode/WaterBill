@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="455871a5-8018-47aa-b23b-06551790b87e" name="Changes" comment="first push: set up the project and branch">
+    <list default="true" id="455871a5-8018-47aa-b23b-06551790b87e" name="Changes" comment="InteractionWithUser.kt: create functions menuWelcome and menuWaterConsumtion, and add them to Main.kt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/InteractionWithUser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/InteractionWithUser.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
@@ -107,12 +107,21 @@
       <option name="project" value="LOCAL" />
       <updated>1704875086106</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="InteractionWithUser.kt: create functions menuWelcome and menuWaterConsumtion, and add them to Main.kt">
+      <option name="closed" value="true" />
+      <created>1704876021889</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704876021889</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit: initialize the project" />
     <MESSAGE value="first push: set up the project and branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="first push: set up the project and branch" />
+    <MESSAGE value="InteractionWithUser.kt: create functions menuWelcome and menuWaterConsumtion, and add them to Main.kt" />
+    <option name="LAST_COMMIT_MESSAGE" value="InteractionWithUser.kt: create functions menuWelcome and menuWaterConsumtion, and add them to Main.kt" />
   </component>
 </project>
