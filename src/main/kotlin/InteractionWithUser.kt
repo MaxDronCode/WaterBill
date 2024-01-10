@@ -9,15 +9,15 @@ import java.time.LocalDate
  * @since 2024/01/10
  */
 fun menuWelcome(){
-    val str="""
+    val str=""" $BLUE_BOLD
         |#############################################################################
-        |# Benvingut a l'aplicació que t'ajuda a entendre la teva factura de l'aigua #
-        |# Li farem unes breus preguntes.                                            #
-        |# I podrà veure de manera molt fàcil el seu import i a què es dèu.          #
-        |# Li desitgem una agradable experiència.                                    #
-        |#                                                                           #
+        |#$GREEN_BOLD Benvingut a l'aplicació que t'ajuda a entendre la teva factura de l'aigua $BLUE_BOLD#
+        |#$GREEN_BOLD Li farem unes breus preguntes.                                            $BLUE_BOLD#
+        |#$GREEN_BOLD I podrà veure de manera molt fàcil el seu import i a què es dèu.          $BLUE_BOLD#
+        |#$GREEN_BOLD Li desitgem una agradable experiència.                                    $BLUE_BOLD#
         |#                                                                           #
         |#############################################################################
+        $RESET
         """.trimMargin()
     println(str)
 }
@@ -30,7 +30,7 @@ fun menuWelcome(){
  */
 fun menuWaterConsumtion(): Float {
     return readFloat(
-        "Indiqui el seu consum d'aigua, en Litres, del mes que volem calcular.",
+        "${CYAN_BOLD}Indiqui el seu consum d'aigua, en Litres, del mes que volem calcular.$RESET",
         "Recordi que ha de introduir els litres.",
         "Ha introduit un valor no vàlid",
         0.0f,
@@ -46,7 +46,7 @@ fun menuWaterConsumtion(): Float {
  */
 fun menuLargeFamily(): Boolean {
     return readYesNo(
-        "Son familia nombrosa? (S/N)",
+        "${CYAN_BOLD}Son familia nombrosa? (S/N)$RESET",
         "S",
         "N",
         "Opció no vàlida!"
@@ -61,7 +61,7 @@ fun menuLargeFamily(): Boolean {
  */
 fun menuSingleParentFamily(): Boolean {
     return readYesNo(
-        "Son una familia monoparental/monomarental? (S/N)",
+        "${CYAN_BOLD}Son una familia monoparental/monomarental? (S/N)$RESET",
         "S",
         "N",
         "Opció no vàlida!"
@@ -77,21 +77,21 @@ fun menuSingleParentFamily(): Boolean {
 fun menuNumberOfMembers (largeFamily:Boolean, singleParentFamily:Boolean): Int {
     var numberOfMembers:Int = 0
     if (largeFamily && singleParentFamily){
-            numberOfMembers = readInt("Vostè ha indicat que es familia monomarental i nombrosa a la vegada, indiqui quants membres resideixen a la vostra finca.",
+            numberOfMembers = readInt("${CYAN_BOLD}Vostè ha indicat que es familia monomarental i nombrosa a la vegada, indiqui quants membres resideixen a la vostra finca.$RESET",
             "Ha de introduir un nombre enter positiu.",
             "Valor no acceptat, Valor mínim:4 , Valor màxim:10.",
             4,
             10)
         return numberOfMembers
     }else if (singleParentFamily){
-            numberOfMembers = readInt("Vostè ha indicat que pertany a una familia monomarental, indiqui quants membres resideixen a la vostra finca.",
+            numberOfMembers = readInt("${CYAN_BOLD}Vostè ha indicat que pertany a una familia monomarental, indiqui quants membres resideixen a la vostra finca.$RESET",
             "Ha de introduir un nombre enter positiu.",
             "Valor no acceptat, Valor mínim:2 , Valor màxim:10.",
             2,
             10)
         return numberOfMembers
     } else {
-            numberOfMembers = readInt("Vostè ha indicat que pertany a una familia nombrosa, indiqui quants membres resideixen a la vostra finca.",
+            numberOfMembers = readInt("${CYAN_BOLD}Vostè ha indicat que pertany a una familia nombrosa, indiqui quants membres resideixen a la vostra finca.$RESET",
             "Ha de introduir un nombre enter positiu.",
             "Valor no acceptat, Valor mínim:5 , Valor màxim:10.",
             5,
@@ -110,7 +110,7 @@ fun menuNumberOfMembers (largeFamily:Boolean, singleParentFamily:Boolean): Int {
  */
 fun menuSocialBonus(): Boolean {
     return readYesNo(
-        "Introduieixi si disposa d'un bo social: (S/N).",
+        "${CYAN_BOLD}Introduieixi si disposa d'un bo social: (S/N).$RESET",
         "S",
         "N",
         "Opció no vàlida!"
@@ -121,25 +121,25 @@ fun menuInvoice (finalCharge:Float, waterConsumtion:Float, variableFee:Float, fi
     val date:LocalDate = LocalDate.now()
     val pricePerLiter:Float = roundToTwoDecimals(variableFee / waterConsumtion)
 
-    val invoice = """
+    val invoice = """ $GREEN
     |###########################################################################
-    |#                         FACTURA DE L'AIGUA                              #
+    |#                         ${GREEN_BOLD_BRIGHT}FACTURA DE L'AIGUA$GREEN                              #
     |###########################################################################
-    |# Client: ITB                                                             #
-    |# Data: $date                                                             
+    |# ${GREEN_UNDERLINED}Client$RESET: ${WHITE}ITB$GREEN                                                             #
+    |# ${GREEN_UNDERLINED}Data$RESET: $WHITE$date$GREEN                                                             
     |###########################################################################
-    |# Resum del Consum:                                                       #
-    |#   - Litres consumits: $waterConsumtion                                  
-    |#   - Preu per litre: $pricePerLiter                                      
-    |#   - Cuota variable: $variableFee                                        
-    |#   - Cuota Fixe: $fixedFee                                               
+    |# ${GREEN_BOLD_BRIGHT}Resum del Consum: $GREEN                                                      #
+    |#   - ${GREEN_UNDERLINED}Litres consumits$RESET: $waterConsumtion L $GREEN                                 
+    |#   - ${GREEN_UNDERLINED}Preu per litre$RESET: $pricePerLiter €/L   $GREEN                                   
+    |#   - ${GREEN_UNDERLINED}Cuota variable$RESET: $variableFee €     $GREEN                                   
+    |#   - ${GREEN_UNDERLINED}Cuota Fixe$RESET: $fixedFee €          $GREEN                                     
     |###########################################################################
-    |# Descomptes i Bonificacions:                                             #
-    |#   - Bo social: $socialBonus                                           
-    |#   - Familia nombrosa / monoparental: $familyType                                           
-    |#   - Descompte aplicat: $discount                                        
+    |# ${GREEN_BOLD_BRIGHT}Descomptes i Bonificacions: $GREEN                                            #
+    |#   - ${GREEN_UNDERLINED}Bo social$RESET: $socialBonus $GREEN                                           
+    |#   - ${GREEN_UNDERLINED}Familia nombrosa / monoparental$RESET: $familyType  $GREEN                                          
+    |#   - ${GREEN_UNDERLINED}Descompte aplicat$RESET: $discount €  $GREEN                                      
     |###########################################################################
-    |# TOTAL A PAGAR: $finalCharge                                             
+    |# ${GREEN_BOLD_BRIGHT}TOTAL A PAGAR: $WHITE_BOLD_BRIGHT$finalCharge €$GREEN                                            
     |###########################################################################
     """.trimMargin()
 
