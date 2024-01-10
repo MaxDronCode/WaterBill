@@ -117,7 +117,7 @@ fun menuSocialBonus(): Boolean {
     )
 }
 
-fun menuInvoice (finalCharge:Float, waterConsumtion:Float, variableFee:Float, fixedFee:Int, discount:Float = 0f, socialBonus:String = "NO") {
+fun menuInvoice (finalCharge:Float, waterConsumtion:Float, variableFee:Float, fixedFee:Int, discount:Float = 0f, socialBonus:String = "NO", familyType:String = "NO") {
     val date:LocalDate = LocalDate.now()
     val pricePerLiter:Float = roundToTwoDecimals(variableFee / waterConsumtion)
 
@@ -135,8 +135,9 @@ fun menuInvoice (finalCharge:Float, waterConsumtion:Float, variableFee:Float, fi
     |#   - Cuota Fixe: $fixedFee                                               
     |###########################################################################
     |# Descomptes i Bonificacions:                                             #
-    |#   - Descompte aplicat: $discount                                        
     |#   - Bo social: $socialBonus                                           
+    |#   - Familia nombrosa / monoparental: $familyType                                           
+    |#   - Descompte aplicat: $discount                                        
     |###########################################################################
     |# TOTAL A PAGAR: $finalCharge                                             
     |###########################################################################

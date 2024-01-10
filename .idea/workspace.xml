@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="455871a5-8018-47aa-b23b-06551790b87e" name="Changes" comment="InteractionWithUser.kt:&#10;introducing the first version of the final invoice shown to the user (function menuInvoice)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/InteractionWithUser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/InteractionWithUser.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utilitites.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utilitites.kt" afterDir="false" />
-    </list>
+    <list default="true" id="455871a5-8018-47aa-b23b-06551790b87e" name="Changes" comment="utilitites.kt: The function readYesNo is introduced and implemented throughout the program, replacing the readBoolean function, and it is also documented" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -193,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704901002231</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="utilitites.kt: The function readYesNo is introduced and implemented throughout the program, replacing the readBoolean function, and it is also documented">
+      <option name="closed" value="true" />
+      <created>1704902406798</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1704902406798</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -208,6 +212,7 @@
     <MESSAGE value="calculationsFunctions.kt: added roundToTwoDecimals function and implement it everywhere.&#10;Fix bugs and improve code.&#10;Main.kt: add calculation of the final charge section" />
     <MESSAGE value="utilitites.kt: move here the roundToTwoDecimals function and add kdoc.&#10;calculationsFunctions.kt: add kdoc to all functions" />
     <MESSAGE value="InteractionWithUser.kt:&#10;introducing the first version of the final invoice shown to the user (function menuInvoice)" />
-    <option name="LAST_COMMIT_MESSAGE" value="InteractionWithUser.kt:&#10;introducing the first version of the final invoice shown to the user (function menuInvoice)" />
+    <MESSAGE value="utilitites.kt: The function readYesNo is introduced and implemented throughout the program, replacing the readBoolean function, and it is also documented" />
+    <option name="LAST_COMMIT_MESSAGE" value="utilitites.kt: The function readYesNo is introduced and implemented throughout the program, replacing the readBoolean function, and it is also documented" />
   </component>
 </project>
