@@ -94,7 +94,7 @@ fun menuNumberOfMembers (largeFamily:Boolean, singleParentFamily:Boolean): Int {
         return  numberOfMembers
     }
 
-
+    return numberOfMembers
 }
 
 
