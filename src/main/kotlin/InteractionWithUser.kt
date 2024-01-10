@@ -1,7 +1,4 @@
-import org.example.readBoolean
-import org.example.readFloat
-import org.example.readInt
-import org.example.roundToTwoDecimals
+import org.example.*
 import java.time.LocalDate
 
 
@@ -45,12 +42,14 @@ fun menuWaterConsumtion(): Float {
  * @author Max Dron
  * @since 2024/01/10
  * @return Returns a boolean value indicating whether the user belongs to a large family or not.
- * @see readBoolean
+ * @see readYesNo
  */
 fun menuLargeFamily(): Boolean {
-    return readBoolean(
-        "Son familia nombrosa? (true/false)",
-        "Valor incorrecte, recordi (true/false)"
+    return readYesNo(
+        "Son familia nombrosa? (S/N)",
+        "S",
+        "N",
+        "Opció no vàlida!"
     )
 }
 
@@ -58,12 +57,14 @@ fun menuLargeFamily(): Boolean {
  * @author Max Dron
  * @since 2024/01/10
  * @return Returns a boolean value indicating whether the user belongs to a single parent family or not.
- * @see readBoolean
+ * @see readYesNo
  */
 fun menuSingleParentFamily(): Boolean {
-    return readBoolean(
-        "Son una familia monoparental/monomarental? (true/false)",
-        "Valor incorrecte, recordi (true/false)"
+    return readYesNo(
+        "Son una familia monoparental/monomarental? (S/N)",
+        "S",
+        "N",
+        "Opció no vàlida!"
     )
 }
 
@@ -101,16 +102,18 @@ fun menuNumberOfMembers (largeFamily:Boolean, singleParentFamily:Boolean): Int {
 }
 
 
-/** Function that asks the user if they have a social bonus using the readBoolean() function.
+/** Function that asks the user if they have a social bonus using the readYesNo() function.
  * @author Max Dron
  * @since 2024/01/10
  * @return A boolean is returned indicating whether the user enjoys a social bonus or not
- * @see readBoolean
+ * @see readYesNo
  */
 fun menuSocialBonus(): Boolean {
-    return readBoolean(
-        "Introduieixi si disposa d'un bo social: (true/false).",
-        "Valor incorrecte, recordi que les opcions son (true/false)"
+    return readYesNo(
+        "Introduieixi si disposa d'un bo social: (S/N).",
+        "S",
+        "N",
+        "Opció no vàlida!"
     )
 }
 

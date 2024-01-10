@@ -15,6 +15,30 @@ fun roundToTwoDecimals(number: Float): Float {
     return round(number * 100) / 100
 }
 
+/** Function that serves to collect a string in the style of 'Yes/No' from the user and transform it into a Boolean
+ * @author Max Dron
+ * @since 2024/01/10
+ * @param pMessageIn Input message to be shown to the user
+ * @param optionYes The option that we will use as 'yes' to transform into true
+ * @param optionNo The option that we will use as 'no' to transform it into false
+ * @param pMessageErrorDV Data value error message to be shown to the user
+ * @return Returns true or false
+ */
+fun readYesNo (pMessageIn: String,optionYes:String, optionNo:String, pMessageErrorDV:String) : Boolean {
+    var input:String = ""
+    do {
+        println(pMessageIn)
+        input = scan.next().uppercase()
+        if (input != optionYes && input != optionNo){
+            println(YELLOW_BOLD_BRIGHT + "WARNING: " + pMessageErrorDV + RESET)
+        }
+        scan.nextLine()
+    } while (input != optionYes && input != optionNo)
+
+    return if (input == optionYes) true
+    else false
+}
+
 /**
  * This method can be used to read a String word value from the user through keyboard using java.util.Scanner
  * @author raimon.izard
