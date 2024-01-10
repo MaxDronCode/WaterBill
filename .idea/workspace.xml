@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="455871a5-8018-47aa-b23b-06551790b87e" name="Changes" comment="InteractionWithUser.kt: The menuFamilyType function is included, added to Main.kt, and kDoc is added and corrected in these functions as well as the previously existing ones.">
+    <list default="true" id="455871a5-8018-47aa-b23b-06551790b87e" name="Changes" comment="Main.kt: Includes several functions and corrects code documentation&#10;InteractionWithUser.kt: update documentation, update some functions, add function menuNumberOfMembers and menuSocialBonus">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/InteractionWithUser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/InteractionWithUser.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
@@ -122,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704877209046</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Main.kt: Includes several functions and corrects code documentation&#10;InteractionWithUser.kt: update documentation, update some functions, add function menuNumberOfMembers and menuSocialBonus">
+      <option name="closed" value="true" />
+      <created>1704878794544</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1704878794544</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -130,6 +138,7 @@
     <MESSAGE value="first push: set up the project and branch" />
     <MESSAGE value="InteractionWithUser.kt: create functions menuWelcome and menuWaterConsumtion, and add them to Main.kt" />
     <MESSAGE value="InteractionWithUser.kt: The menuFamilyType function is included, added to Main.kt, and kDoc is added and corrected in these functions as well as the previously existing ones." />
-    <option name="LAST_COMMIT_MESSAGE" value="InteractionWithUser.kt: The menuFamilyType function is included, added to Main.kt, and kDoc is added and corrected in these functions as well as the previously existing ones." />
+    <MESSAGE value="Main.kt: Includes several functions and corrects code documentation&#10;InteractionWithUser.kt: update documentation, update some functions, add function menuNumberOfMembers and menuSocialBonus" />
+    <option name="LAST_COMMIT_MESSAGE" value="Main.kt: Includes several functions and corrects code documentation&#10;InteractionWithUser.kt: update documentation, update some functions, add function menuNumberOfMembers and menuSocialBonus" />
   </component>
 </project>

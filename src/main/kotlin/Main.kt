@@ -7,12 +7,11 @@ fun main() {
     val waterConsumtion:Float = menuWaterConsumtion()
 
     // esbrinem quin tipus de familia té l'usuari
-    val specialFamily:Array<Boolean> = menuFamilyType()
+    val largeFamily:Boolean = menuLargeFamily()
+    val singleParentFamily:Boolean = menuSingleParentFamily()
 
-    // si l'usuari forma part d'una tipus de familia especial, se li preguntarà de quants membres esta format el seu nucli familiar
-    if (true in specialFamily) {
-        val numberOfMembers = menuNumberOfMembers()
-    }
+    // si l'usuari es familia nombrosa o monomarental hem de saber de quants membres es composa el seu nucli familiar
+    val numberOfMembers = menuNumberOfMembers(largeFamily, singleParentFamily)
 
     // esbrinem si l'usuari disposa d'un bo social
     val hasSocialBonus:Boolean = menuSocialBonus()

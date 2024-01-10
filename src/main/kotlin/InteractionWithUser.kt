@@ -39,26 +39,28 @@ fun menuWaterConsumtion (): Float {
     return waterConsumtion
 }
 
-/**
- * Function that determines if the user belongs to any type of special family, collects the data in an array of booleans, and returns it.
+/** Function that determines if the user belongs to a large family.
  * @author Max Dron
  * @since 2024/01/10
- * @return An array of booleans is returned that contains the values of whether the user belongs to a large family or a single-parent family.
+ * @return Returns a boolean value indicating whether the user belongs to a large family or not.
  * @see readBoolean
- * @see readInt
  */
-fun menuFamilyType (): Array<Boolean> {
-
+fun menuLargeFamily() : Boolean {
     val largeFamily = readBoolean("Son familia nombrosa? (true/false)",
         "Valor incorrecte, recordi (true/false)")
+    return largeFamily
+}
+
+/** Function that determines if the user belongs to a single parent family.
+ * @author Max Dron
+ * @since 2024/01/10
+ * @return Returns a boolean value indicating whether the user belongs to a single parent family or not.
+ * @see readBoolean
+ */
+fun menuSingleParentFamily () : Boolean {
     val singleParentFamily = readBoolean("Son una familia monoparental/monomarental? (true/false)",
-    "Valor incorrecte, recordi (true/false)")
-
-    val boolArray:Array<Boolean> = arrayOf(largeFamily, singleParentFamily)
-
-    return boolArray
-
-
+        "Valor incorrecte, recordi (true/false)")
+    return singleParentFamily
 }
 
 /** Function that determines how many members the user's family consists of.
@@ -67,13 +69,32 @@ fun menuFamilyType (): Array<Boolean> {
  * @return An integer is returned with the number of members in the user's family nucleus.
  * @see readInt
  */
-fun menuNumberOfMembers (): Int {
-    val numberOfMembers = readInt("Indiqui quants membres resideixen al vostre domicil·li",
-        "Ha de introduir un nombre enter positiu.",
-        "Valor no acceptat, Valor mínim:2 , Valor màxim:10.",
-        2,
-        10)
-    return numberOfMembers
+fun menuNumberOfMembers (largeFamily:Boolean, singleParentFamily:Boolean): Int {
+    var numberOfMembers:Int = 0
+    if (largeFamily && singleParentFamily){
+            numberOfMembers = readInt("Vostè ha indicat que es familia monomarental i nombrosa a la vegada, indiqui quants membres resideixen a la vostra finca.",
+            "Ha de introduir un nombre enter positiu.",
+            "Valor no acceptat, Valor mínim:4 , Valor màxim:10.",
+            4,
+            10)
+        return numberOfMembers
+    }else if (singleParentFamily){
+            numberOfMembers = readInt("Vostè ha indicat que pertant a una familia monomarental, indiqui quants membres resideixen a la vostra finca.",
+            "Ha de introduir un nombre enter positiu.",
+            "Valor no acceptat, Valor mínim:2 , Valor màxim:3.",
+            2,
+            3)
+        return numberOfMembers
+    } else if (largeFamily){
+            numberOfMembers = readInt("Vostè ha indicat que pertant a una familia nombrosa, indiqui quants membres resideixen a la vostra finca.",
+            "Ha de introduir un nombre enter positiu.",
+            "Valor no acceptat, Valor mínim:5 , Valor màxim:10.",
+            5,
+            10)
+        return  numberOfMembers
+    }
+
+
 }
 
 
